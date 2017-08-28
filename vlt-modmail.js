@@ -28,10 +28,10 @@ function postConversations(context, r, conversations) {
       } else {
         switch(conv.state) {
           case 0: // New
-            color = "#00BCD4";
+            color = "#03A9F4";
             break;
           case 1: // in progress
-            color = "#0dd3bb";
+            color = "#388E3C";
             break;
           case 2: // archived
             color = "#949494";
