@@ -3,11 +3,6 @@ const snoowrap = require("snoowrap@1.14.2");
 const truncate = require("truncate@2.0.0");
 const request = require("superagent@3.6.0");
 
-Array.prototype.tee = function(func) {
-  this.forEach(func);
-  return this;
-}
-
 function postConversations(context, r, conversations) {
   if (conversations.length === 0) {
     return Promise.resolve();
@@ -35,7 +30,7 @@ function postConversations(context, r, conversations) {
           case 0: // New
             color = "#00BCD4";
             break;
-          case 1: // inprogress
+          case 1: // in progress
             color = "#0dd3bb";
             break;
           case 2: // archived
