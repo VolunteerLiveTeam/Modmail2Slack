@@ -71,7 +71,7 @@ module.exports = function(context, cb) {
     });
     
     const body = {
-      entity: 'VolunteerLiveTeam',
+      entity: context.secrets.SUBREDDIT,
       limit: 25,
     };
     
