@@ -1,0 +1,3 @@
+#!/bin/bash
+
+wt cron schedule "* * * * *" vlt-modmail.js --secret REDDIT_USER_AGENT="server:modmail2slack:v1.0.0 (by /u/!!NAMEHERE!!)" --secret REDDIT_ID="!!REDDIT_ID_HERE!!" --secret REDDIT_SECRET="!!REDDIT_SECRET_HERE!" --secret REDDIT_USERNAME="!!REDDIT_USERNAME_HERE!!" --secret REDDIT_PASSWORD="!!REDDIT_PASSWORD_HERE!!" --secret SLACK_URL="!!SLACK_URL_HERE!!" --secret SUBREDDIT="!!SUBREDDIT!!" --bundle

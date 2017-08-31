@@ -1,0 +1,23 @@
+{
+  "name": "modmail2slack",
+  "version": "1.0.0",
+  "description": "Post all reddit modmail to a Slack channel",
+  "main": "vlt-modmail.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VolunteerLiveTeam/Modmail2Slack.git"
+  },
+  "author": "Marks Polakovs <marks@markspolakovs.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VolunteerLiveTeam/Modmail2Slack/issues"
+  },
+  "homepage": "https://github.com/VolunteerLiveTeam/Modmail2Slack#readme",
+  "dependencies": {
+    "snoowrap": "^1.14.2",
+    "superagent": "^3.6.0"
+  }
+}
