@@ -1,6 +1,5 @@
 "use strict";
 const snoowrap = require("snoowrap@1.14.2");
-const truncate = require("truncate@2.0.0");
 const request = require("superagent@3.6.0");
 
 function postConversations(context, r, conversations) {
@@ -71,7 +70,7 @@ module.exports = function(context, cb) {
     });
     
     const body = {
-      entity: 'VolunteerLiveTeam',
+      entity: context.secrets.SUBREDDIT,
       limit: 25,
     };
     
