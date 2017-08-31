@@ -12,7 +12,7 @@ In the reference (/r/VolunteerLiveTeam) installation, Modmail2Slack is installed
 4. `$ cp setup.example.sh setup.sh`
 5. Edit the values with !!EXCLAMATION MARKS!! around them.
 6. Install the webtask CLI: `$ npm install -g wt-cli`
-7. Log in to Webtask: `$ wt login`
+7. Log in to Webtask: `$ wt init`
 8. Run the bot: `$ ./setup.sh`
 
 And away you go!
