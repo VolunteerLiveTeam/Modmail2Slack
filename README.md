@@ -4,7 +4,7 @@ Post all new Reddit modmail to a Slack channel.
 
 ## Installation
 
-In the reference (/r/VolunteerLiveTeam) installation, Modmail2Slack is installed as a [webtask](https://webtask.io).
+In the reference (/r/VolunteerLiveTeam) installation, Modmail2Slack is installed as a [webtask](https://webtask.io). Your subreddit must be using the new modmail.
 
 1. Go to [reddit settings](https://www.reddit.com/prefs/apps/) and create an app. Select type "Script". Make a note of the ID and secret. (ID is under "personal use script").
 2. Create a reddit user, give it mail permissions on your subreddit, and add it as a user of your app.
