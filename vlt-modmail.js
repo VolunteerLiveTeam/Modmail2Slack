@@ -1,6 +1,6 @@
 "use strict";
-const snoowrap = require("snoowrap@1.14.2");
-const request = require("superagent@3.6.0");
+const snoowrap = require("snoowrap");
+const request = require("superagent");
 
 function postConversations(context, r, conversations) {
   if (conversations.length === 0) {
