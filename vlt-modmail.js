@@ -58,6 +58,7 @@ function postConversations(context, r, conversations) {
 module.exports = function(context, cb) {
   context.storage.get((err, data) => {
     if (err) {
+      console.log(`ERROR getting storage: ${err}`);
       cb(err);
     }
     const storage = data || { last: '2017-08-27T22:05:17.330Z' };
