@@ -61,7 +61,6 @@ module.exports = function(context, cb) {
       cb(err);
     }
     const storage = data || { last: '2017-08-27T22:05:17.330Z' };
-    console.log([storage, context.secrets]);
     const r = new snoowrap({
       userAgent: context.secrets.REDDIT_USER_AGENT,
       clientId: context.secrets.REDDIT_ID,
