@@ -81,6 +81,7 @@ module.exports = function(context, cb) {
     }).then(response => {
       const last = new Date(storage.last);
       const ids = response.conversationIds.filter(x => new Date(response.conversations[x].lastUpdated) > last)
+      console.log(`Last ID: ${ids[ids.length - 1]}`);
       const conversations = ids.map(id => response.conversations[id]);
       postConversations(context, r, conversations).then(
         () => {
