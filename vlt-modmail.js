@@ -92,7 +92,7 @@ module.exports = function(context, cb) {
             if (err) {
               cb(err);
             }
-            cb(null, 'ok');
+            cb(null, `ok, Last ID ${ids[ids.length - 1]}, num IDs ${ids.length}`);
           })
         }
       ).catch(x => cb(x));
