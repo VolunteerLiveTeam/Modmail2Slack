@@ -37,6 +37,7 @@ function postConversations(context, r, conversations) {
             break;
         }
       }
+      console.log([conv, msg]);
       return {
         fallback: `Message from ${msg.author.name.name}: <https://mod.reddit.com/mail/all/${msg.id}>`,
         author_name: msg.author.name.name, // what the fuck?
