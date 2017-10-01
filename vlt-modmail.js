@@ -43,7 +43,7 @@ function postConversations(context, r, conversations) {
         author_name: msg.author.name.name, // what the fuck?
         author_link: `https://reddit.com/u/${msg.author.name.name}`,
         title: conv.subject,
-        title_link: `https://mod.reddit.com/mail/all/${msg.id}`,
+        title_link: `https://mod.reddit.com/mail/all/${conv.id}`,
         text: msg.bodyMarkdown,
         ts: new Date(msg.date).valueOf() / 1000,
         color
